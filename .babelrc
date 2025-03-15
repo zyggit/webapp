@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "useBuiltIns": "usage",
+      "corejs": 3,
+      "targets": {
+        "ios": "9",
+        "safari": "9"
+      }
+    }],
+    "@babel/preset-react"
+  ]
+}
