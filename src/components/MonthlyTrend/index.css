@@ -1,7 +1,14 @@
 .monthly-trend {
-  padding: 20px;
+  width: 100%;
 }
 
-.month-picker {
+.controls {
+  display: flex;
+  gap: 16px;
   margin-bottom: 20px;
+}
+
+.chart-container {
+  height: 400px;
+  position: relative;
 }

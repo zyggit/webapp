@@ -5,34 +5,35 @@ import FeedingInput from './components/FeedingInput';
 import Dashboard from './components/Dashboard';
 import DailyRecord from './components/DailyRecord';
 import MonthlyTrend from './components/MonthlyTrend';
+import DataExport from './components/DataExport';
 
 const { Header, Content } = Layout;
 
 const App = () => {
-  const menuItems = [
-    { key: '/', label: '记录喝奶' },
-    { key: '/dashboard', label: '数据总览' },
-    { key: '/daily', label: '每日记录' },
-    { key: '/monthly', label: '月度趋势' },
-  ];
-
   return (
-    <Layout className="layout">
+    <Layout>
       <Header>
-        <div className="logo">宝宝喝奶记录</div>
+        <div className="logo" />
         <Menu
           theme="dark"
           mode="horizontal"
-          items={menuItems}
-          onClick={({ key }) => window.location.hash = key}
+          defaultSelectedKeys={['1']}
+          items={[
+            { key: '1', label: <Link to="/">录入</Link> },
+            { key: '2', label: <Link to="/dashboard">大盘数据</Link> },
+            { key: '3', label: <Link to="/daily">每日记录</Link> },
+            { key: '4', label: <Link to="/monthly">月度趋势</Link> },
+            { key: '5', label: <Link to="/export">数据导出</Link> }
+          ]}
         />
       </Header>
-      <Content className="content">
+      <Content className="container">
         <Routes>
           <Route path="/" element={<FeedingInput />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/daily" element={<DailyRecord />} />
           <Route path="/monthly" element={<MonthlyTrend />} />
+          <Route path="/export" element={<DataExport />} />
         </Routes>
       </Content>
     </Layout>

@@ -1,13 +1,6 @@
 .feeding-input {
-  max-width: 500px;
-  margin: 20px auto;
-}
-
-.amount-display {
-  font-size: 48px;
-  text-align: center;
-  margin: 20px 0;
-  color: #1890ff;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .quick-buttons {
@@ -16,16 +9,55 @@
   margin-bottom: 20px;
 }
 
-.quick-buttons button {
-  flex: 1;
-  margin: 0 5px;
-}
-
-.custom-input {
+.amount-adjuster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-.custom-input .ant-input-number {
-  width: 200px;
+.save-button {
+  display: block;
+  width: 100%;
+}
+
+.manual-input {
+  padding: 16px 0;
+}
+
+.datetime-picker {
+  margin-bottom: 24px;
+}
+
+.amount-input {
+  background: #f5f5f5;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.ant-tabs-nav {
+  margin-bottom: 24px !important;
+}
+
+.ant-input-number {
+  width: 120px;
+}
+
+.ant-space {
+  width: 100%;
+}
+
+.quick-buttons .ant-btn {
+  flex: 1;
+  margin: 0 8px;
+}
+
+.quick-buttons .ant-btn:first-child {
+  margin-left: 0;
+}
+
+.quick-buttons .ant-btn:last-child {
+  margin-right: 0;
 }

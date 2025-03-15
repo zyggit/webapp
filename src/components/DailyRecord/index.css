@@ -1,12 +1,7 @@
 .daily-record {
-  padding: 20px;
+  width: 100%;
 }
 
-.date-picker {
-  margin-bottom: 20px;
-}
-
-.record-list {
-  max-height: 500px;
-  overflow-y: auto;
+.ant-card-extra {
+  margin-left: auto;
 }
