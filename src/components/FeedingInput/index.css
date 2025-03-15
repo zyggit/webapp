@@ -1,0 +1,31 @@
+.feeding-input {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.amount-display {
+  font-size: 48px;
+  text-align: center;
+  margin: 20px 0;
+  color: #1890ff;
+}
+
+.quick-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.quick-buttons button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.custom-input {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.custom-input .ant-input-number {
+  width: 200px;
+}
